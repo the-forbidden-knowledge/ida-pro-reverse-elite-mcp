@@ -1,0 +1,16 @@
+{
+  "PersistentStore": [
+    {"name": "Block-In-All", "action": "block", "direction": "in"},
+    {"name": "Allow-Web-Out", "action": "allow", "direction": "out", "port": 443}
+  ],
+  "RSOP": [
+    {"name": "GPO-Block-Telnet", "action": "block", "direction": "in", "port": 23}
+  ],
+  "StaticServiceStore": [
+    {"name": "WSH-EventLog-In", "action": "block", "direction": "in", "service": "EventLog"},
+    {"name": "WSH-EventLog-RPC", "action": "allow", "direction": "in", "service": "EventLog", "port": 135}
+  ],
+  "ConfigurableServiceStore": [
+    {"name": "ThirdParty-Updater", "action": "allow", "direction": "out", "app": "updater.exe"}
+  ]
+}

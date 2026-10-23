@@ -1,0 +1,11 @@
+[
+  {"name": "WSH-Block-All-In", "layer": "static", "action": "block", "direction": "in"},
+  {"name": "Cfg-Allow-Updater", "layer": "configurable", "action": "allow",
+   "direction": "out", "app": "updater.exe", "port": 443},
+  {"name": "Vis-Allow-Web", "layer": "visible", "action": "allow",
+   "direction": "out", "proto": "tcp", "port": 443},
+  {"name": "Vis-Block-443", "layer": "visible", "action": "block",
+   "direction": "out", "port": 443},
+  {"name": "Bypass-Corp", "layer": "auth_bypass", "action": "allow",
+   "direction": "out", "port": 8443}
+]

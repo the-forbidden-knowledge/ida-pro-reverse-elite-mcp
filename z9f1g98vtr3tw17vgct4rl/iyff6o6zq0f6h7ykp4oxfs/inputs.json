@@ -1,0 +1,9 @@
+{
+  "dpapi": {"mkpk_sha256": "a1b2c3d4e5f60718", "master_key_ok": true, "iterations": 5600},
+  "credhist": {"hashes_recuperados": 2},
+  "lsa": {"total_secrets": 5, "service_secrets": [{"name": "_SC_Spooler"}, {"name": "_SC_wuauserv"}]},
+  "token": {"exposure_score": 12, "dangerous_enabled": [{"privilege": "SeDebugPrivilege"}]},
+  "wfp": {"total_rules": 6, "hidden_stores_present": ["ConfigurableServiceStore", "StaticServiceStore"]},
+  "services": {"LegadoSvc": {"risk": "HIGH"}, "MeuAppSvc": {"risk": "LOW"}},
+  "dpapi_system": {"seed_sha256": "deadbeef01234567"}
+}

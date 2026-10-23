@@ -1,0 +1,11 @@
+[
+  {"event_id": 5156, "pid": 1234, "process": "C:\\App\\svc.exe",
+   "src": "10.0.0.5", "dst": "10.0.0.10", "sport": 50001, "dport": 443, "proto": "tcp"},
+  {"event_id": 5158, "pid": 1234, "process": "C:\\App\\svc.exe",
+   "src": "0.0.0.0", "dst": null, "sport": 8080, "dport": null, "proto": "tcp"},
+  {"event_id": 5157, "pid": 5678, "process": "C:\\App\\old.exe",
+   "src": "10.0.0.5", "dst": "10.0.0.99", "sport": 50002, "dport": 23, "proto": "tcp"},
+  {"event_id": 5153, "pid": 5678, "process": "C:\\App\\old.exe",
+   "src": "10.0.0.5", "dst": "10.0.0.99", "sport": 0, "dport": 0, "proto": "tcp"},
+  {"event_id": 9999, "pid": 1, "process": "x"}
+]

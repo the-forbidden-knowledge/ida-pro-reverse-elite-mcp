@@ -1,0 +1,27 @@
+{
+  "alvo": "target_synth.exe",
+  "sha256": "c0f99ed700b8444d163eb3c2302a4d2879bf1dbf9c70cd3195eadb7419776720",
+  "tamanho": 2048,
+  "xor_key": 66,
+  "strings_esperadas": [
+    "http://exemplo.local/c2",
+    "Software\\Vendor\\App",
+    "dados-sensiveis.bin"
+  ],
+  "apis_esperadas": [
+    "CreateFileA",
+    "ReadFile",
+    "RegSetValueExA",
+    "WriteFile"
+  ],
+  "dlls_esperadas": [
+    "advapi32.dll",
+    "kernel32.dll"
+  ],
+  "comportamentos": [
+    "cria arquivo de dados via CreateFileA ;; caminho valido ;; arquivo criado no disco",
+    "le conteudo via ReadFile ;; arquivo aberto ;; bytes lidos em buffer",
+    "grava resultado via WriteFile ;; buffer preenchido ;; bytes gravados no arquivo",
+    "persiste configuracao via RegSetValueExA ;; chave de registro acessivel ;; valor gravado no registro"
+  ]
+}

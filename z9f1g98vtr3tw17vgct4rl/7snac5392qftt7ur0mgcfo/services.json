@@ -1,0 +1,6 @@
+{
+  "Spooler": {"identity": "LocalSystem", "privileges": ["SeImpersonatePrivilege", "SeTcbPrivilege"]},
+  "wuauserv": {"identity": "LocalSystem", "privileges": ["SeDebugPrivilege", "SeImpersonatePrivilege"]},
+  "MeuAppSvc": {"identity": "NT SERVICE\\MeuAppSvc", "privileges": ["SeChangeNotifyPrivilege"]},
+  "LegadoSvc": {"identity": ".\\svclegado", "privileges": ["SeDebugPrivilege", "SeBackupPrivilege"]}
+}

@@ -1,0 +1,9 @@
+{
+  "HKLM\\Security\\Policy\\Secrets": {
+    "_SC_Spooler": {"CurrentValue": "Svc-Spooler-9Xq2"},
+    "_SC_wuauserv": {"CurrentValue": "Svc-WU-7Lm4"},
+    "DefaultPassword": {"CurrentValue": "Autologon-Secret"},
+    "DPAPI_SYSTEM": {"CurrentValue": "5f4d3c2b1a0987654321abcdef"},
+    "L$_SQSA_": {"CurrentValue": "outro-segredo"}
+  }
+}
